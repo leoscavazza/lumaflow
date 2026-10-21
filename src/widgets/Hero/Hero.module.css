@@ -1,0 +1,44 @@
+.hero { max-width: 1240px; margin: 0 auto; padding: 55px 32px 82px; min-height: 625px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 42px; }
+.copy { padding: 0 0 10px 12px; }
+.eyebrow { display: flex; align-items: center; gap: 9px; color: #5d6d60; font-size: 10px; letter-spacing: 1.6px; font-weight: 700; }
+.pulse { width: 8px; height: 8px; border-radius: 50%; background: #7aaf3e; box-shadow: 0 0 0 4px #c8f16966; }
+h1 { font-family: Manrope, sans-serif; font-size: clamp(48px, 5.6vw, 76px); line-height: 1.04; letter-spacing: -4.5px; margin: 25px 0 22px; font-weight: 700; }
+h1 span { color: #759a3f; }
+.description { max-width: 450px; color: #68736b; font-size: 16px; line-height: 1.8; margin: 0; }
+.actions { display: flex; align-items: center; gap: 24px; margin-top: 29px; flex-wrap: wrap; }
+.textLink { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; }
+.textLink:hover { color: #658d32; }
+.socialProof { display: flex; align-items: center; gap: 15px; margin-top: 43px; }
+.avatars { display: flex; padding-left: 3px; }
+.avatars span { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; margin-left: -4px; border: 2px solid var(--paper); background: #e2b9a2; color: #4c3b30; font-size: 10px; font-weight: 700; }
+.avatars span:nth-child(2) { background: #b9c7a6; }.avatars span:nth-child(3) { background: #d8c6e2; }.avatars span:nth-child(4) { background: #dce8c2; }
+.stars { display: flex; gap: 2px; color: #8cae4e; }
+.stars svg { width: 12px; height: 12px; fill: currentColor; stroke-width: 1; }
+.socialProof p { margin: 4px 0 0; color: #68736b; font-size: 11px; }.socialProof strong { color: var(--ink); }
+.disclaimer { display: block; color: #929a92; font-size: 9px; margin: 11px 0 0 3px; }
+.visual { height: 520px; background: #e9eddf; border-radius: 48% 48% 22px 22px; position: relative; overflow: hidden; }
+.sunShape { position: absolute; width: 360px; height: 360px; background: #d5e3b8; border-radius: 50%; top: 55px; left: 50%; transform: translateX(-50%); }
+.verticalLabel { position: absolute; left: 22px; top: 42%; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 9px; letter-spacing: 2px; color: #8a9a7c; }
+.productStage { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.sparkle { position: absolute; top: 65px; right: 24%; font-size: 31px; color: #8aa05d; }
+.bottleShadow { position: absolute; width: 195px; height: 28px; bottom: 63px; border-radius: 50%; background: #72826338; filter: blur(7px); }
+.bottle { position: relative; width: 158px; height: 370px; display: flex; flex-direction: column; align-items: center; transform: rotate(5deg); filter: drop-shadow(12px 17px 12px #30432a20); }
+.cap { height: 44px; width: 100px; border-radius: 13px 13px 7px 7px; background: repeating-linear-gradient(90deg,#d9e4c3 0 4px,#c0d1a3 4px 7px); position: relative; z-index: 2; border: 1px solid #b1c398; }
+.cap span { display: block; height: 8px; width: 38px; background: #b4c995; border-radius: 0 0 8px 8px; margin: 0 auto; }
+.bottleNeck { width: 88px; height: 23px; background: linear-gradient(90deg,#b5ca98,#edf2d9 48%,#b2c894); margin-top: -2px; }
+.bottleBody { position: relative; flex: 1; width: 100%; border-radius: 32px 32px 27px 27px; overflow: hidden; background: linear-gradient(90deg,#a8c18a 0%,#d9e6bf 17%,#edf2db 39%,#d2e1b6 73%,#9fb980 100%); border: 1px solid #a6bd88; }
+.bottleShine { position: absolute; top: 18px; left: 15px; height: 76%; width: 9px; border-radius: 20px; background: #fffefa70; }
+.bottleLogo { position: absolute; top: 95px; width: 100%; display: flex; flex-direction: column; align-items: center; color: #37563b; font: 800 22px/1 Manrope,sans-serif; letter-spacing: -1px; text-align: center; }
+.logoLeaf { font-size: 31px; font-weight: 400; margin-bottom: 6px; transform: rotate(90deg); }
+.waterLine { position: absolute; top: 230px; left: 20px; right: 20px; height: 1px; background: #8cae7059; }
+.waterMark { position: absolute; bottom: 48px; width: 100%; text-align: center; font-size: 9px; letter-spacing: 2px; color: #607b4c; }.waterMark small { font-size: 7px; }
+.bottleBase { position: absolute; bottom: 0; left: 14px; right: 14px; height: 10px; background: #a4bd83; border-radius: 50% 50% 0 0; }
+.floatingCard { position: absolute; right: 6%; bottom: 100px; display: flex; align-items: center; gap: 9px; padding: 13px 15px; background: #fffefa; border-radius: 14px; box-shadow: 0 12px 35px #40523717; transform: rotate(-2deg); }
+.checkCircle { display: grid; place-items: center; width: 27px; height: 27px; border-radius: 50%; color: #34543b; background: #dff0be; }
+.floatingCard strong, .floatingCard small { display: block; }.floatingCard strong { font-size: 10px; }.floatingCard small { margin-top: 4px; color: #879087; font-size: 9px; }
+.cardDot { color: #85a94b; font-size: 15px; margin-left: 5px; }
+.floatingTag { position: absolute; top: 120px; left: 8%; background: #fffefaad; border: 1px solid #ffffffad; padding: 10px 13px; border-radius: 999px; font-size: 10px; color: #526448; box-shadow: 0 8px 20px #5264480b; }
+.floatingTag span { margin-right: 5px; color: #8ba94d; }
+.bottomNote { position: absolute; bottom: 22px; left: 25px; right: 25px; display: flex; justify-content: space-between; color: #84917d; font-size: 9px; letter-spacing: .5px; }
+@media (max-width: 850px) { .hero { gap: 25px; padding-top: 40px; }.visual { height: 470px; }.floatingCard { right: 2%; transform: scale(.9); }.description { font-size: 14px; } }
+@media (max-width: 650px) { .hero { grid-template-columns: 1fr; padding: 30px 20px 50px; gap: 34px; }.copy { padding-left: 0; } h1 { font-size: clamp(51px, 13vw, 68px); letter-spacing: -3px; margin-top: 20px; }.visual { height: 450px; border-radius: 46% 46% 22px 22px; }.socialProof { margin-top: 32px; }.floatingCard { right: 1%; bottom: 85px; transform: scale(.85); transform-origin: right center; }.sunShape { width: 310px; height: 310px; } }

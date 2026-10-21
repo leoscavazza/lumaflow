@@ -1,0 +1,27 @@
+.section { display: grid; grid-template-columns: .95fr 1.05fr; align-items: center; gap: clamp(50px, 8vw, 110px); max-width: 1176px; margin: 0 auto; padding: 110px 32px; }
+.visual { height: 490px; border-radius: 24px; background: #e5ebd9; position: relative; overflow: hidden; display: grid; place-items: center; }
+.circleOne { width: 330px; height: 330px; border-radius: 50%; background: #d1e0b5; position: absolute; }
+.circleTwo { width: 250px; height: 250px; border-radius: 50%; border: 1px solid #b8cb99; position: absolute; }
+.glass { position: relative; width: 142px; height: 270px; border: 3px solid #a8c28c; border-top: 0; border-radius: 15px 15px 35px 35px; background: #f9fff078; overflow: hidden; box-shadow: 12px 17px 30px #49633c20; transform: rotate(-7deg); }
+.glassTop { height: 9px; position: absolute; left: -3px; right: -3px; top: 0; border-radius: 8px; background: #9dbb7b; z-index: 2; }
+.glassWater { position: absolute; bottom: 0; height: 62%; width: 100%; background: linear-gradient(180deg,#b6d58d9c,#b7d78b); border-radius: 0 0 29px 29px; }
+.glassMark { position: absolute; z-index: 2; top: 70px; width: 100%; text-align: center; color: #416342; font: 800 38px Manrope,sans-serif; line-height: .9; }
+.glassMark small { font-size: 15px; }
+.glassHighlight { position: absolute; left: 15px; top: 24px; height: 75%; width: 8px; border-radius: 8px; background: #fffefa75; z-index: 3; }
+.note { position: absolute; z-index: 3; top: 70px; left: 25px; padding: 13px 15px; display: flex; gap: 9px; align-items: flex-start; background: #fffefa; border-radius: 13px; color: #7b9b4c; box-shadow: 0 10px 25px #30432a10; font-size: 10px; line-height: 1.6; transform: rotate(-4deg); }
+.note strong { color: #334a36; font-size: 11px; }
+.drop { position: absolute; right: 23%; top: 100px; color: #8da65e; font-size: 27px; }
+.caption { position: absolute; bottom: 25px; left: 25px; color: #8a9b7c; font-size: 9px; letter-spacing: 1.8px; }
+.kicker { color: #7b9657; font-size: 10px; font-weight: 700; letter-spacing: 1.7px; }
+.content h2 { font: 700 clamp(38px, 4vw, 53px)/1.12 Manrope,sans-serif; letter-spacing: -2.5px; margin: 18px 0; }
+.content h2 em { font-style: normal; color: #7d9f4c; }
+.intro { color: #78827a; font-size: 14px; line-height: 1.8; max-width: 430px; margin-bottom: 30px; }
+.steps { display: flex; flex-direction: column; gap: 20px; }
+.step { display: grid; grid-template-columns: 42px 1fr 18px; align-items: start; gap: 14px; position: relative; }
+.stepIcon { display: grid; place-items: center; width: 42px; height: 42px; background: #e9efdd; color: #5e7d43; border-radius: 13px; }
+.stepTitle { display: flex; align-items: baseline; gap: 10px; }
+.stepTitle span { font-size: 9px; color: #9ba68e; letter-spacing: 1px; }
+.stepTitle h3 { font: 700 14px Manrope,sans-serif; margin: 0; }
+.step p { font-size: 12px; color: #7d867e; line-height: 1.7; margin: 7px 0 0; max-width: 370px; }
+.stepArrow { color: #a3b28e; margin-top: 12px; }
+@media (max-width: 780px) { .section { grid-template-columns: 1fr; padding: 75px 24px; gap: 45px; }.visual { height: 420px; }.content h2 { font-size: 45px; } }

@@ -1,0 +1,6 @@
+.footer { padding: 45px max(24px, calc((100vw - 1176px)/2)) 25px; background: #1d2925; color: #fffefa; }
+.top { display: flex; align-items: center; justify-content: space-between; gap: 25px; padding-bottom: 42px; }
+.brand { display: inline-flex; align-items: center; gap: 7px; font: 800 24px Manrope,sans-serif; letter-spacing: -1.2px; }.brand > span:last-child { color: #a8b4a8; font-weight: 500; margin-left: -7px; }.mark { width: 27px; height: 27px; border-radius: 9px 9px 9px 3px; display: grid; place-items: center; background: #c8f169; color: #244d3c; font-size: 24px; transform: rotate(-7deg); }
+.top p { color: #a8b5a9; font-size: 12px; line-height: 1.8; margin: 0; }
+.bottom { border-top: 1px solid #ffffff20; padding-top: 20px; display: flex; justify-content: space-between; gap: 20px; color: #8d9b8e; font-size: 10px; }.bottom div { display: flex; gap: 22px; }.bottom a:hover { color: #c8f169; }
+@media (max-width: 600px) { .top { align-items: flex-start; flex-direction: column; }.bottom { flex-direction: column; }.bottom div { flex-wrap: wrap; gap: 15px; } }

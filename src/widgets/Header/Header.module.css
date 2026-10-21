@@ -1,0 +1,21 @@
+.header {
+  height: 86px; max-width: 1240px; margin: 0 auto; padding: 0 32px;
+  display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 5;
+}
+.brand { display: inline-flex; align-items: center; gap: 10px; font-family: Manrope, sans-serif; font-size: 24px; font-weight: 800; letter-spacing: -1.3px; }
+.brandLight { color: #758078; font-weight: 500; }
+.logoMark { width: 29px; height: 29px; display: grid; place-items: center; border-radius: 10px 10px 10px 3px; background: var(--green); transform: rotate(-7deg); }
+.logoMark span { display: block; width: 9px; height: 15px; border: 2px solid var(--ink); border-radius: 80% 15% 80% 15%; transform: rotate(35deg); }
+.nav { display: flex; align-items: center; gap: 34px; }
+.nav > a:not(:last-child) { font-size: 13px; color: #59645d; transition: color .2s; }
+.nav > a:not(:last-child):hover { color: #1d2925; }
+.nav :global(button) { min-height: 44px; padding: 0 18px; }
+.menuToggle { display: none; border: 0; background: transparent; color: var(--ink); }
+@media (max-width: 720px) {
+  .header { height: 72px; padding: 0 20px; }
+  .brand { font-size: 22px; }
+  .menuToggle { display: grid; place-items: center; }
+  .nav { display: none; position: absolute; top: 65px; left: 16px; right: 16px; padding: 20px; background: var(--white); border: 1px solid var(--line); border-radius: 20px; box-shadow: 0 16px 45px #1d29251a; flex-direction: column; align-items: stretch; gap: 22px; }
+  .navOpen { display: flex; }
+  .nav > a:not(:last-child) { font-size: 15px; }
+}

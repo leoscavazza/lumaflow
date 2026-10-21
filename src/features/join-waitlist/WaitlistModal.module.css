@@ -1,0 +1,16 @@
+.overlay { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 18px; background: #14251dd9; backdrop-filter: blur(6px); animation: fadeIn .18s ease; }
+.modal { width: min(100%, 470px); position: relative; border-radius: 24px; background: #fffefa; padding: 38px; box-shadow: 0 24px 80px #0003; animation: rise .22s ease; }
+.close { position: absolute; top: 18px; right: 18px; border: 0; background: #f0f2e9; color: #415443; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; }
+.symbol { width: 43px; height: 43px; display: grid; place-items: center; background: #c8f169; border-radius: 14px 14px 14px 4px; font-size: 29px; color: #244d3c; margin-bottom: 22px; }
+.kicker { color: #78954f; font-size: 9px; letter-spacing: 1.7px; font-weight: 700; }
+.modal h2 { font: 800 36px/1.08 Manrope,sans-serif; letter-spacing: -1.7px; margin: 13px 0; }.modal h2 em { color: #7b9e4a; font-style: normal; }
+.modal > p, .success p { color: #778078; font-size: 12px; line-height: 1.8; }
+.modal form { display: flex; flex-direction: column; margin-top: 24px; }
+.modal label { font-size: 11px; font-weight: 700; margin: 0 0 7px; }
+.modal input { border: 1px solid #dfe4d8; border-radius: 10px; background: #fbfcf8; padding: 13px 14px; margin-bottom: 16px; outline: none; color: #1d2925; font-size: 12px; }
+.modal input:focus { border-color: #8da95d; box-shadow: 0 0 0 3px #c8f16950; }
+.submit { width: 100%; margin-top: 3px; }
+.modal > small { display: block; color: #9aa198; font-size: 9px; text-align: center; margin-top: 15px; }
+.success { text-align: center; padding: 25px 0 10px; }.success > svg { color: #7da24b; margin-bottom: 14px; }.success p { margin-bottom: 25px; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } } @keyframes rise { from { transform: translateY(12px); opacity: .6; } to { transform: translateY(0); opacity: 1; } }
+@media (max-width: 480px) { .modal { padding: 30px 23px; }.modal h2 { font-size: 32px; } }

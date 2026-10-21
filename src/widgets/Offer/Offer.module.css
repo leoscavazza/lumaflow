@@ -1,0 +1,19 @@
+.section { padding: 105px 32px; background: #f6f5f0; }
+.offerCard { max-width: 1176px; margin: 0 auto; border-radius: 25px; background: #244d3c; color: #fffefa; overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; min-height: 500px; }
+.left { padding: 58px clamp(28px, 5vw, 65px); }
+.kicker { font-size: 10px; letter-spacing: 1.6px; font-weight: 700; color: #c8e89b; }
+.left h2 { font: 700 clamp(38px, 4vw, 52px)/1.1 Manrope,sans-serif; letter-spacing: -2.5px; margin: 20px 0 15px; }.left h2 em { color: #c8f169; font-style: normal; }
+.left > p { max-width: 350px; font-size: 13px; line-height: 1.8; color: #c2d2c3; }
+.price { display: flex; align-items: flex-start; font: 800 52px Manrope,sans-serif; letter-spacing: -2px; margin-top: 27px; }.price span { font-size: 16px; letter-spacing: 0; margin: 11px 7px 0 0; }.price sup { font-size: 19px; letter-spacing: -.5px; margin-top: 7px; }
+.priceNote { color: #b5c8b7; font-size: 9px; margin-top: -2px; margin-bottom: 22px; }
+.safe { display: flex; align-items: center; gap: 7px; color: #c0d4c2; font-size: 10px; margin-top: 15px; }
+.right { background: #2c5b45; position: relative; display: flex; align-items: center; justify-content: center; min-height: 500px; }
+.offerBottle { position: absolute; width: 125px; height: 320px; top: 55px; left: 22%; transform: rotate(7deg); filter: drop-shadow(12px 20px 12px #12271a35); }
+.offerCap { width: 78px; height: 35px; border-radius: 10px 10px 4px 4px; margin: 0 auto; background: repeating-linear-gradient(90deg,#d8e5c3 0 4px,#b5ca96 4px 7px); }
+.offerNeck { width: 70px; height: 20px; margin: 0 auto; background: #d9e8bf; }
+.offerBody { height: 265px; border-radius: 27px 27px 23px 23px; background: linear-gradient(90deg,#a5c182,#e2edcc 45%,#a3bd80); border: 1px solid #9db77d; display: flex; align-items: center; flex-direction: column; color: #37563b; }
+.offerBody > span { margin-top: 65px; font-size: 25px; }.offerBody strong { font: 800 20px/1 Manrope,sans-serif; text-align: center; letter-spacing: -1px; }.offerBody small { margin-top: 45px; font-size: 8px; letter-spacing: 2px; }
+.sticker { position: absolute; top: 62px; right: 13%; z-index: 2; width: 94px; height: 94px; display: grid; place-content: center; border-radius: 50%; background: #c8f169; color: #244d3c; text-align: center; font-size: 9px; line-height: 1.5; transform: rotate(11deg); }.sticker strong { font-size: 9px; }
+.included { position: absolute; right: 8%; bottom: 42px; width: 250px; padding: 21px; border: 1px solid #ffffff30; border-radius: 16px; background: #ffffff0c; backdrop-filter: blur(5px); }
+.included h3 { font: 700 12px Manrope,sans-serif; margin: 0 0 14px; }.included > div { display: flex; gap: 8px; align-items: center; margin-top: 10px; font-size: 10px; color: #e1eae0; }.included > div span { display: grid; place-items: center; width: 17px; height: 17px; background: #c8f169; color: #244d3c; border-radius: 50%; flex-shrink: 0; }
+@media (max-width: 780px) { .section { padding: 75px 20px; }.offerCard { grid-template-columns: 1fr; }.left { padding: 42px 28px; }.right { min-height: 470px; }.offerBottle { left: 16%; top: 55px; }.sticker { right: 12%; top: 45px; }.included { right: 5%; bottom: 30px; width: min(250px, 68%); } }
