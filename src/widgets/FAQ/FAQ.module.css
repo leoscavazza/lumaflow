@@ -8,3 +8,4 @@
 .chevron { width: 30px; height: 30px; flex-shrink: 0; display: grid; place-items: center; border-radius: 50%; background: #e9efdd; color: #587541; transition: transform .2s; }.active .chevron { transform: rotate(180deg); background: #c8f169; }
 .answer { margin: -5px 35px 22px 0; font-size: 12px; color: #737e75; line-height: 1.8; }
 @media (max-width: 760px) { .section { grid-template-columns: 1fr; gap: 35px; padding: 75px 24px; } .intro h2 { font-size: 43px; } }
+.answer[hidden] { display: none; }

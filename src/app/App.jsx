@@ -13,8 +13,9 @@ export function App() {
   const [modalOpen, setModalOpen] = useState(false);
   return (
     <>
+      <a className="skipLink" href="#conteudo-principal">Pular para o conteúdo</a>
       <Header onJoin={() => setModalOpen(true)} />
-      <main>
+      <main id="conteudo-principal">
         <Hero onJoin={() => setModalOpen(true)} />
         <Benefits />
         <HowItWorks />

@@ -17,10 +17,10 @@ export function FAQ() {
       <div className={styles.intro}><span className={styles.kicker}>TUDO CLARO?</span><h2>Ficou com<br/><em>alguma dúvida?</em></h2><p>Respondemos o que você precisa saber sobre a ideia LumaFlow.</p></div>
       <div className={styles.list}>
         {questions.map((item, index) => <article className={`${styles.item} ${openIndex === index ? styles.active : ''}`} key={item.q}>
-          <button className={styles.question} onClick={() => setOpenIndex(openIndex === index ? -1 : index)} aria-expanded={openIndex === index}>
+          <button id={`faq-question-${index}`} className={styles.question} type="button" aria-controls={`faq-answer-${index}`} onClick={() => setOpenIndex(openIndex === index ? -1 : index)} aria-expanded={openIndex === index}>
             <span>{item.q}</span><span className={styles.chevron}><ChevronDown size={18}/></span>
           </button>
-          {openIndex === index && <p className={styles.answer}>{item.a}</p>}
+          <p id={`faq-answer-${index}`} className={styles.answer} role="region" aria-labelledby={`faq-question-${index}`} hidden={openIndex !== index}>{item.a}</p>
         </article>)}
       </div>
     </section>

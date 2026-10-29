@@ -11,10 +11,10 @@ export function Header({ onJoin }) {
       <a className={styles.brand} href="#inicio" aria-label="LumaFlow, início" onClick={closeMenu}>
         <span className={styles.logoMark}><span /></span><span>luma<span className={styles.brandLight}>flow</span></span>
       </a>
-      <button className={styles.menuToggle} onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}>
+      <button className={styles.menuToggle} type="button" aria-controls="primary-navigation" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}>
         {menuOpen ? <X size={22} /> : <Menu size={22} />}
       </button>
-      <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
+      <nav id="primary-navigation" aria-label="Navegação principal" className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
         <a href="#beneficios" onClick={closeMenu}>Benefícios</a>
         <a href="#como-funciona" onClick={closeMenu}>Como funciona</a>
         <a href="#avaliacoes" onClick={closeMenu}>Avaliações</a>

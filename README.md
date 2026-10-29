@@ -122,15 +122,33 @@ npm run build
 npm run preview
 ```
 
-## Publicação no GitHub
+## Atividade 02 — Análise e melhoria com MCP
 
-1. Crie um repositório público no GitHub com o nome `lumaflow-landing-page`.
-2. Extraia os arquivos deste projeto e abra a pasta no terminal.
-3. Execute `git init`.
-4. Execute `git add .`.
-5. Execute `git commit -m "feat: cria landing page LumaFlow"`.
-6. Crie o repositório remoto no GitHub e siga as instruções exibidas para conectar o repositório local.
-7. Envie os commits com `git push`.
-8. Confira em uma janela anônima se o repositório está público e envie o link no Moodle.
+### Aspecto escolhido
 
-**Importante:** o repositório precisa ser criado e publicado na sua conta. O projeto entregue aqui não cria automaticamente um repositório público no GitHub.
+Foi priorizada a acessibilidade de navegação, com foco em pessoas que utilizam teclado e tecnologias assistivas. A escolha foi feita porque a landing page já possuía as principais seções e interações, mas alguns controles podiam comunicar melhor seu estado e oferecer uma navegação mais previsível.
+
+### MCP utilizado
+
+Foi utilizado o MCP **Sites Preview** integrado ao ambiente de desenvolvimento com IA. Ele foi escolhido por permitir gerar uma prévia navegável da página em um ambiente isolado, facilitando a observação da hierarquia visual e a experimentação das interações sem publicar o site.
+
+O MCP foi efetivamente acionado para criar uma prévia da landing page LumaFlow. A prévia serviu como apoio visual à análise da navegação e dos estados interativos. Ela não substitui a execução local do projeto React nem representa a publicação do repositório.
+
+### Modificações realizadas no código
+
+- Inclusão de um link “Pular para o conteúdo”, visível ao navegar por teclado.
+- Inclusão de estilos globais de `:focus-visible` para destacar o elemento que está recebendo foco.
+- Menu mobile agora informa seu estado com `aria-expanded`, identifica a navegação controlada por `aria-controls` e possui rótulo semântico.
+- FAQ agora relaciona cada pergunta à sua resposta com `aria-controls`, `aria-labelledby` e `aria-expanded`, mantendo a resposta identificada como região.
+- Modal do formulário agora recebe foco inicial, permite fechar com a tecla `Escape`, mantém a navegação por `Tab` dentro da janela e devolve o foco ao elemento anterior quando fecha.
+- O diálogo associa seu texto explicativo ao formulário por meio de `aria-describedby`.
+
+### Avaliação da contribuição do MCP
+
+O MCP Sites Preview contribuiu oferecendo uma representação navegável e isolada da interface, útil para observar a composição visual e os principais caminhos da página. A análise de acessibilidade e as alterações no código foram realizadas em conjunto com o apoio da IA e revisão dos componentes React.
+
+Como limitação, a prévia do Sites é uma representação independente em HTML e não executa diretamente os componentes React do repositório. Por isso, a validação final das alterações deve ser feita executando o projeto localmente, testando teclado, menu, FAQ e modal em diferentes larguras de tela.
+
+### Evidências e validação
+
+A prévia navegável gerada pelo MCP fica disponível na conversa em que foi criada. Para complementar a evidência, recomenda-se registrar capturas de tela do menu mobile aberto, do foco visível, do modal aberto e da confirmação do formulário após executar a versão React localmente.
